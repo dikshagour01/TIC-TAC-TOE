@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    list-style-type: none;
+
+}
+
+nav{
+    height: 70px;
+    background-color: #ce8ad7;
+    font-size: 20px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+   
+}
+
+nav ul li{
+    padding-top: 20px;
+}
+
+.gameContainer{
+   
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: (3, 10vw);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+
+}
+
+.box{
+    border: 2px solid black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 5vw;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: #ce8ad7;
+}
+
+.gameinfo{
+    padding: 0 30px;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+#imagebox{
+    width: 0;
+    transition: width 2s ease-in-out;
+}
+
+.line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    background-color:#48204d;
+    position: absolute;
+    transition: width 1s ease-in-out;
+
+}
+
+#reset{
+    height: 30px;
+    width: 80px;
+    font-size: 20px;
+    border: solid 2px black;
+    border-radius: 4px;
+    background-color: #ce8ad7;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 800px)
+{
+    .container{
+        flex-wrap: wrap;
+    }
+    .gameinfo{
+        margin-top: 40px;
+    }
+}
